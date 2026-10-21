@@ -1,0 +1,64 @@
+<!-- PAC3: Tutorial d'A-FRAME 360º // REALITAT VIRTUAL -->
+ <!-- Erica Meseguer Cava -->
+
+
+<html>
+  <head>
+    <title>PAC3. Tutorial d'A-FRAME 360º</title>
+    <meta name="PAC3" content="PAC3 de l'assignatura Realitat Virtual del grau Multimèdia">
+	<style>
+       	#pagina{
+			width: 900px;
+            margin: auto;
+		}
+		#header{
+			height: 50px;
+			text-align:center;
+            font-size: 12px;
+            color: rgb(94, 20, 100);
+		}
+        #VRarea1, #VRarea2 {
+			position: relative;
+			height: 450px;
+			background-color:white;            
+		}
+		#vr1, #vr2{
+			width: 100%;
+			height: 100%;
+		}
+		#go{
+			position: absolute;
+			left: 829px;
+			top: 395px;
+			width: 53px;
+			height: 39px;
+			background-color:rgba(2, 54, 24, 0.2);
+		}
+		p{
+			text-align:center;
+            color:rgb(94, 20, 100)
+		}
+	</style>
+  </head>
+  <body>
+	<div id="pagina">
+		<div id="header">
+			<h1>PAC3. Tutorial d'A-FRAME 360º</h1>
+		</div>
+		<div id="VRarea1">
+			<iframe id="vr1" src="a-sky.html"></iframe>
+			<div id="go" onClick="javascript:document.location='a-sky.html'"></div>
+		</div>
+		<div id="footer">
+			<p>Escena a-sky</p>
+		</div>	
+        <div id="VRarea2">
+			<iframe id="vr2" src="a-videosphere.html"></iframe>
+			<div id="go" onClick="javascript:document.location='a-videosphere.html'"></div>
+		</div>
+		<div id="footer">
+			<p>Escena a-videosphere</p>
+		</div>			
+	</div>
+  </body>
+</html>

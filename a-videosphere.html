@@ -1,0 +1,55 @@
+<!-- PAC3: Tutorial d'A-FRAME 360º // REALITAT VIRTUAL -->
+ <!-- Erica Meseguer Cava -->
+
+<html>
+    <head>
+        <title>Videosphere</title>
+        <meta name="description" content="Videosphere">
+         <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>         
+    </head>
+
+    <body>
+        <a-scene>
+            <a-assets>
+               <video id="ciutatVideo" autoplay loop="true" preload="auto" src="Recursos/15334660_1280_720_50fps.mp4">
+            </a-assets>
+
+            <a-videosphere src="#ciutatVideo"></a-videosphere>
+
+            <a-box id="index" position="8 -10 -30" rotation="0 0 30" scale="2 2 2" color="purple">
+               <a-animation scale ="rotation" dur="1000" repeat="indefinite" to="0 0 360"></a-animation>   
+               <a-animation attribute="position" direction="alternate" dur="3000" repeat="indefinite" to="0 -1050 -210"></a-animation>                          
+            </a-box>
+
+            <a-box id="index" position="8 5 20" rotation="0 45 0" scale="2.5 2.5 2.5" color="yellow">
+               <a-animation scale ="rotation" dur="1000" repeat="indefinite" to="0 0 360"></a-animation>   
+               <a-animation attribute="position" direction="alternate" dur="4000" repeat="indefinite" to="0 -100 -1000"></a-animation>                          
+            </a-box>
+
+            <a-box id="index" position="10 5 -30" rotation="0 0 50" scale="4 4 4" color="blue">
+               <a-animation scale ="rotation" dur="1000" repeat="indefinite" to="0 0 360"></a-animation>   
+               <a-animation attribute="position" direction="alternate" dur="4000" repeat="indefinite" to="0 -1000 -100"></a-animation>                          
+            </a-box>
+
+            <a-box id="index" position="8 -8 -40" rotation="0 0 30" scale="2 2 2" color="red">
+               <a-animation scale ="rotation" dur="1000" repeat="indefinite" to="0 0 360"></a-animation>   
+               <a-animation attribute="position" direction="alternate" dur="4000" repeat="indefinite" to="0 -1000 -210"></a-animation>                          
+            </a-box>
+            
+            <a-box id="index" position="6 3 10" rotation="0 45 0" scale="3.5 3.5 3.5" color="green">
+               <a-animation scale ="rotation" dur="1000" repeat="indefinite" to="0 0 360"></a-animation>   
+               <a-animation attribute="position" direction="alternate" dur="4500" repeat="indefinite" to="0 -100 -1000"></a-animation>                          
+            </a-box>    
+            
+            <a-box id="index" position="-6 -3 -10" rotation="0 45 0" scale="3.5 3.5 3.5" color="#60F7E9">
+               <a-animation scale ="rotation" dur="1000" repeat="indefinite" to="0 0 360"></a-animation>   
+               <a-animation attribute="position" direction="alternate" dur="4500" repeat="indefinite" to="0 100 1000"></a-animation>                          
+            </a-box>
+
+            <a-camera>
+                <a-cursor color="red"></a-cursor>
+            </a-camera>
+    </body>
+</html>
+
+
